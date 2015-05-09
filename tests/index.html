@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
+  <title>Immutable tests</title>
+  <link rel="stylesheet" href="../bower_components/mocha/mocha.css" />
+  <script src="../bower_components/mocha/mocha.js"></script>
+  <script src="../bower_components/chai/chai.js"></script>
+  <script>
+    mocha.setup('bdd');
+  </script>
+  <script src="./spec/immutable.js"></script>
+  <script src="../src/immutable.js"></script>
+</head>
+<body>
+  <div id="mocha"></div>
+  <script>
+    mocha.run(() => {
+      setTimeout(function () {
+        document.location.reload();
+      }, 5000);
+    });
+  </script>
+</body>
+</html>
+
+
